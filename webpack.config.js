@@ -82,8 +82,6 @@ if (mode === 'production') {
         },
       ],
     },
-
-    devtool: 'source-map',
   };
 } else {
   module.exports = {
@@ -149,5 +147,6 @@ if (mode === 'production') {
         },
       ],
     },
+    devtool: 'source-map',
   };
 }
