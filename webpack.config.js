@@ -3,8 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+const mode =
+  process.env.NODE_ENV === 'production' ? 'production' : 'development';
+
 module.exports = {
-  mode: 'development',
+  mode: mode,
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: 8080,
@@ -19,7 +22,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
   },
 
   plugins: [

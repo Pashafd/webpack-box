@@ -1,4 +1,9 @@
-console.log('webpack');
+import { wizzard } from './wizzard';
+
+const developer = true;
+console.log(developer);
+
+console.log(wizzard);
 
 const obj = {
   a: 'ss',
