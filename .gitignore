@@ -2,4 +2,3 @@
 /dist
 yarn.lock
 package-lock.json
-postcss.config.js
